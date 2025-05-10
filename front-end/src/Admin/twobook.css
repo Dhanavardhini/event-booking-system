@@ -1,0 +1,18 @@
+.two-book{
+    display: flex;
+    
+    align-items: center;
+    width: 80vmax;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn-container1{
+    background-color: rgba(0, 0, 0, 0.386);
+    padding: 8rem;
+    border-radius: 35px;
+}
+.btn1{
+    background-color:rgb(41, 95, 152);
+    box-shadow: 0px 0px 8px rgb(205, 194, 194);
+}

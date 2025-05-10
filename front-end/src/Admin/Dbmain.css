@@ -1,0 +1,8 @@
+.db-main{
+     display: flex;
+     background-image: url('../assets/pexels-teddy-2263436.jpg');
+ 
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+}

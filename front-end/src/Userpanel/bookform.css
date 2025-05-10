@@ -1,0 +1,93 @@
+.vr-body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-image: url(../assets/wed2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.vr-container {
+    width: 600px;
+    background-color: rgba(245, 245, 245, 0.585);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.vr-title {
+    text-align: center;
+    color: #333;
+}
+
+.vr-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.vr-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 48%; /* Adjusted for two columns per row */
+}
+
+.vr-label {
+    color: black;
+    font-weight: bold;
+}
+
+.vr-input, .vr-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: black;
+}
+
+.vr-submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #06308c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.vr-submit-btn:hover {
+    background-color: #2a5077;
+}
+
+@media (max-width: 480px) {
+    .vr-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .vr-input, .vr-select {
+        font-size: 14px;
+    }
+
+    .vr-submit-btn {
+        font-size: 14px;
+    }
+
+    .vr-form-group {
+        width: 100%; /* Full width for smaller screens */
+    }
+}

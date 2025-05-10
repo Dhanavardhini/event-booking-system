@@ -1,0 +1,116 @@
+.manage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vmax;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-image: url("C:\xampp\htdocs\VEBBOX\REACT JS\college website\vehiclerent\src\assets\depositphotos_52489449-stock-photo-man-offering-a-car-key.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.container-manage {
+    
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.vehicle-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.vehicle-table th {
+    background: rgb(41, 95, 152);
+    color: white;
+    font-weight: 500;
+    text-align: left;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.vehicle-table td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.vehicle-table tr {
+    background: #f5f5f5;
+}
+
+.vehicle-table tr:nth-child(even) {
+    background: #eeeeee;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-delete {
+    background:rgb(41, 95, 152);
+}
+
+.btn-edit {
+    background:rgb(41, 95, 152);
+}
+
+.btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 1024px) {
+    .vehicle-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 1rem auto;
+    }
+
+    .vehicle-table th,
+    .vehicle-table td {
+        padding: 0.75rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .vehicle-table th,
+    .vehicle-table td {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    .btn {
+        width: 28px;
+        height: 28px;
+    }
+}

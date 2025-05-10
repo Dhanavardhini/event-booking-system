@@ -1,0 +1,100 @@
+.main-mybook{
+    height: 100vh;
+    background-color: #0853a3c3;
+}
+.vrs-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.vrs-heading {
+    color: #ffffff;
+    text-align: center;
+}
+
+.vrs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.vrs-table-header {
+    background-color: #25384c;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.vrs-table-cell {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+
+.vrs-status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.vrs-status-pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.vrs-status-confirmed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.vrs-status-cancelled {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+@media screen and (max-width: 768px) {
+    .vrs-table, .vrs-table-header, .vrs-table-row, .vrs-table-cell {
+        display: block;
+    }
+
+    .vrs-table-header {
+        position: absolute;
+        left: -9999px;
+        top: -9999px;
+    }
+
+    .vrs-table-row {
+        margin-bottom: 15px;
+        border: 1px solid #e0e0e0;
+    }
+
+    .vrs-table-cell {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+
+    .vrs-table-cell:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .vrs-status {
+        display: inline-block;
+        margin-top: 5px;
+    }
+}

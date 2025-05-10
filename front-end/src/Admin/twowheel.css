@@ -1,0 +1,119 @@
+.main-2{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid; */
+    margin-top: 10px;
+    width: 80vmax;
+    background-image: url("C:\xampp\htdocs\VEBBOX\REACT JS\college website\vehiclerent\src\assets\depositphotos_52489449-stock-photo-man-offering-a-car-key.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.twomain{
+    font-family: Arial, sans-serif;
+    line-height: 0.5;
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 20px; */
+    /* background-color: #1a1a1a; */
+    color: white;
+    
+}
+.container-two {
+    width: 90%;
+    max-width: 750px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: white;
+}
+
+.form-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-weight: bold;
+    color: white;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #ff9800;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.file-input {
+    background-color: transparent;
+    padding: 0;
+}
+
+.file-input::file-selector-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.submit-btn {
+    background-color: rgb(41, 95, 152);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: rgb(41, 95, 152);
+}
+
+@media screen and (min-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .description-group {
+        grid-column: 1;
+        grid-row: span 2;
+    }
+}
